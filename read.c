@@ -11,7 +11,10 @@ int main(){
     int a=0, d=0, con=0, sym=0,v=0;
     
     fptr = fopen("file.txt", "r");
-    if(fptr == NULL){
+    printf("\n");
+
+    if (fptr == NULL)
+    {
         printf("NO such file");
     }
     else{  
@@ -52,15 +55,15 @@ int main(){
             }
 
             printf("%c", ch);
+            
         }
-
-        printf("\n");
+        
+        printf("\n\n");
         printf("%d number of alphabets\n", a);
         printf("%d number of digits\n",d );
         printf("%d number of vowels\n",v );
         printf("%d number of consonents\n",con );
         printf("%d number of special symbols\n",sym );
         fclose(fptr);
-        printf("Succsess!");
     }
 }
