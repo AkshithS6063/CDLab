@@ -7,7 +7,7 @@ int main(){
     FILE *fptr;
 
     char data[100];
-    scanf("%s",data);
+    fgets(data,100,stdin);
 
     fptr = fopen("file.txt", "w");
     if(fptr == NULL){
@@ -18,10 +18,10 @@ int main(){
 
         if(strlen(data)>0){
             fputs(data, fptr);
-            fputs("\n", fptr);
+            // fputs("\n", fptr);
         }
         fclose(fptr);
-        printf("Success\n");
+        printf("Entered into data\n");
         printf("file closed\n");
     }
 
