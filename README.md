@@ -11,4 +11,4 @@
 
 3. Execute the read.c file.       
 > gcc read.c   ->  ./a.out
-4. Output gives the number of **characters** in the file and which all are **vowels** and **consonants**. It also shows the number of **digits** and also the number of **special characters** in the sentence.
+4. Output gives the number of **characters** present in the file along with the number of **vowels** and **consonants**. It also shows the number of **digits** and also the number of **special characters** in the string.
