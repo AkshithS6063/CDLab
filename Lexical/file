@@ -2,5 +2,5 @@ void main()
 {
     int a , b
     z = a + b
-    int z
+    int y
 }

@@ -30,24 +30,24 @@ void main(){
         }
     }
 
-    printf("Keywords are -> ");
+    printf("Keywords :----> ");
         for(int i=0; i<key; i++) {
         printf("%s ", KEY[i]);
     }
     printf("\n");
-    printf("Functions -> ");
+    printf("Functions :---> ");
     for (int i = 0; i < fn; i++)
     {
         printf("%s ", FUNC[i]);
     }
     printf("\n");
-    printf("Operators -> ");
+    printf("Operators :---> ");
     for (int i = 0; i < op; i++)
     {
         printf("%s ", OP[i]);
     }
     printf("\n");
-    printf("Identifiers -> ");
+    printf("Identifiers :-> ");
     for (int i = 0; i < id; i++)
     {
         printf("%s ", ID[i]);
