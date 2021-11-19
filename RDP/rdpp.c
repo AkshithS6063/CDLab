@@ -6,41 +6,52 @@ char str[20];
 int x = 0;
 
 void S();
-void L();
-void L1();
+void A();
+void B();
+void C();
 
-void L() {
-	S();
-	L1();
+void A(){
+	if(str[x]=='a'){
+		x++;
+		A();
+		if(str[x]=='b'){
+			x++;
+		}
+		else{
+			error = 1;
+		}
+	}
+	else{
+		C();
+	}
 }
 
-void L1(){
-	if(str[x] == ','){
+void C(){
+	if(str[x]=='e'){
 		x++;
-		S();
-		L1();
+		C();
+	}
+}
+
+void B(){
+	
+	if(str[x]=='c'){
+		x++;
+		B();
+	}
+	else{
+		if(str[x]=='d'){
+			x++;
+		}
 	}
 }
 
 void S()
 {
   
-    if (str[x] == '(')
-    {
-        x++;
-		L();
-    
-    	if (str[x] == ')')
-    	{
-		    	x++;
-		}
-		else { error = 1;}
-	}
-    if (str[x] == 'a')
-    {
-        x++;
-    }
-    
+    A();
+    B();
+    C();
 }
 
 void main()
@@ -60,3 +71,4 @@ void main()
         printf("Rejected\n");
     }
 }
+
